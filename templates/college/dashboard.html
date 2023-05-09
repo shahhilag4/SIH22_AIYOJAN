@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="icon" type="image/x-icon" href="../../static/images/Logo1.ico">
+    <link rel="stylesheet" href="../../static/assets/dashboard/css/styles.css" />
+    <link rel="stylesheet" href="../../static/assets/dashboard/css/main.css" />
+    <title>AIयोजन-Dashboard</title>
+  </head>
+  <body id="body">
+    <!-- Header -->
+    <header id="header">
+      <h1 id="logo"><a href="\"><b style="color: #389138;font-weight: 600;">AI</b><b style="color: #B0E60B;font-weight: 600;">योजन</b></a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="\">Home</a></li>
+          <li><a href="\logout" class="button primary">Log Out</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img src="assets/hello.svg" alt="" />
+            <div class="main__greeting">
+              <h1>Hello Name</h1>
+              <p>Welcome</p>
+            </div>
+          </div>
+        
+          <!-- CHARTS STARTS HERE -->
+          <div class="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Daily Reports</h1>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+              <div id="apex1"></div>
+            </div>
+
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <div>
+                  <h1>Stats Reports</h1>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="card1">
+                  <h1>Student visited</h1>
+                  <p>75,300</p>
+                </div>
+
+                <div class="card2">
+                  <h1>Messages</h1>
+                  <p>124,200</p>
+                </div>
+
+                <div class="card3">
+                  <h1>NIRF Rank</h1>
+                  <p>3900</p>
+                </div>
+
+                <div class="card4">
+                  <h1>Daily Visitors</h1>
+                  <p>1881</p>
+                </div>
+              </div>
+            </div>
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Daily Reports</h1>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+              <div id="chart"></div>
+            </div>
+          </div>
+          <!-- CHARTS ENDS HERE -->
+        </div>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../../static/assets/dashboard/js/script.js"></script>
+  </body>
+</html>

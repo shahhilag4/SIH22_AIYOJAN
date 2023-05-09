@@ -1,0 +1,4 @@
+About
+A full stack web application for making it easier to plan and manage college and university events using an academic calendar.Video Link - https://youtu.be/tOgK95cg0Xw
+
+ai-yojan.onrender.com/

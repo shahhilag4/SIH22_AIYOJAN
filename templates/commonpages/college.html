@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AIयोजन-College Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../static/assets/college-page/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="../../static/images/Logo1.ico">	<link rel="stylesheet" href="../../static/assets/main/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="../../static/images/Logo1.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+	</head>
+	<body class="is-preload">
+		<header id="header">
+			<h1 id="logo"><a href="/"><b style="color: #389138;font-weight: 600;">AI</b><b style="color: #B0E60B;font-weight: 600;">योजन</b></a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/collegelist">Colleges</a></li>
+					<li><a href="#">Annual Calendar</a></li>
+					<li><a href="/login" class="button primary">Log In</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Header -->
+		{% for data in files %}
+			<header id="header1">
+				<div class="inner1">
+					<a href="#" class="image avatar"><img src="../../static/college/{{data.college_img}}" alt="" /></a>
+					<h1><strong>{{data.college_name}}</strong></h1>
+					{{data.city}}<br/>
+					NIRF Ranking :- {{data.nirf_rank}}<br />
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main1" style="background-image: url('../../static/images/bg.jpg');">
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Time Table</h2>
+						<div class="row">
+							<article class="col-12 work-item">
+								<a href="/studentcalendarclg/{{data.aicte_code}}" class="thumb">
+								<img  class="image fit college" src="../../static/images/1.png" alt=""/>
+								<h3 class="linking" style="text-align: center;">College Calender</h3>
+								</a>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="https://engg.dypvp.edu.in/pgadmissions.aspx" class="button">Apply Now</a></li>
+							<li><a href="https://engg.dypvp.edu.in/" class="button">Learn More</a></li>
+						</ul>
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>In case of any doubts you can drop a message here which would be directly sent to the college email.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="mailto:{{data.email}}" enctype="text/plain">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="Name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="Email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="Message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<ul class="actions" style="margin-top:2rem">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										{{data.address}}<br />
+										{{data.city}}<br />
+										India
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										{{data.contact_no}}
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#"> {{data.email}}</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+			</div>
+		{% endfor %}
+		<!-- Scripts -->
+			<script src="../../static/assets/college-page/js/jquery.min.js"></script>
+			<script src="../../static/assets/college-page/js/jquery.poptrox.min.js"></script>
+			<script src="../../static/assets/college-page/js/browser.min.js"></script>
+			<script src="../../static/assets/college-page/js/breakpoints.min.js"></script>
+			<script src="../../static/assets/college-page/js/util.js"></script>
+			<script src="../../static/assets/college-page/js/main.js"></script>
+
+			<script src="../../static/assets/main/js/jquery.min.js"></script>
+			<script src="../../static/assets/main/js/jquery.scrolly.min.js"></script>
+			<script src="../../static/assets/main/js/jquery.dropotron.min.js"></script>
+			<script src="../../static/assets/main/js/jquery.scrollex.min.js"></script>
+			<script src="../../static/assets/main/js/browser.min.js"></script>
+			<script src="../../static/assets/main/js/breakpoints.min.js"></script>
+			<script src="../../static/assets/main/js/util.js"></script>
+			<script src="../../static/assets/main/js/main.js"></script>
+	</body>
+</html>
